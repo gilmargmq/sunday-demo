@@ -1,8 +1,12 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
+    console.log(router.pathname)
     const pages = [
         {
             name: 'Inicio',
@@ -10,25 +14,25 @@ const Navbar = () => {
         },
         {
             name: 'Sobre Nosotros',
-            link: './sobre-nosotros'
+            link: '/sobre-nosotros'
         },
         {
             name: 'Productos',
-            link: './productos'
+            link: '/productos'
         },
         {
             name: 'Descargas',
-            link: './descargas'
+            link: '/descargas'
         },
         {
             name: 'Contacto',
-            link: './contacto'
+            link: '/contacto'
         },
     ]
 
     return (
         <nav className="flex w-full items-center justify-between flex-wrap p-6 top-0 sticky bg-white z-50">
-            <div className="flex items-center">
+            <div className="flex items-center cursor-pointer">
                 <img src='./logo.png' className="max-h-10" alt="Logo" />
             </div>
             <div className="block lg:hidden">
@@ -56,9 +60,9 @@ const Navbar = () => {
                 <div className="text-sm space-y-4 lg:space-y-0 lg:flex-grow lg:space-x-4">
                     {
                         pages.map((page, index) => (
-                            <a key={index} href={page.link} className="block lg:inline-block hover:text-orange-500">
+                            <Link key={index} href={page.link} className={`block lg:inline-block hover:text-orange-500 ${router.pathname === page.link && 'text-orange-500'}`}>
                                 {page.name}
-                            </a>
+                            </Link>
                         ))
                     }
                 </div>

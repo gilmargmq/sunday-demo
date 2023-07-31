@@ -71,7 +71,7 @@ const ProductsList: FC = () => {
                 {
                     products_list.map((product, index) =>
                     (<Card maxW='sm' key={index}>
-                        <CardBody className="flex flex-col space-y-4 items-center text-center">
+                        <CardBody className="flex flex-col space-y-1 items-center text-center">
                             <div className="h-60 w-60 relative overflow-hidden">
                                 <img
                                     src={product.image}

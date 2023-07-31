@@ -42,7 +42,7 @@ const IndexProductsList: FC<Props> = ({ addToRefs }) => {
                 {
                     products_list.map((product, index) =>
                     (<Card maxW='sm' key={index}>
-                        <CardBody className="flex flex-col space-y-4 items-center text-center">
+                        <CardBody className="flex flex-col space-y-1 items-center text-center">
                             <div className="h-60 w-60 relative overflow-hidden">
                                 <img
                                     src={product.image}
@@ -57,9 +57,9 @@ const IndexProductsList: FC<Props> = ({ addToRefs }) => {
                             </span>
                         </CardBody>
                         <CardFooter>
-                            <div className='text-white bg-green-600 w-full p-2 text-md font-medium text-center cursor-pointer'>
+                            <button className='text-white bg-green-600 w-full p-2 text-md font-medium text-center'>
                                 Comprar
-                            </div>
+                            </button>
                         </CardFooter>
                     </Card>))
                 }

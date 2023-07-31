@@ -65,7 +65,7 @@ const facebookIcon = (
 const IndexContactUs: FC = () => {
     return (
         <div className="bg-white flex flex-col md:flex-row items-center space-y-8 justify-center p-12">
-            <div className="w-full xl:w-1/4 flex flex-col space-y-6">
+            <div className="w-full xl:w-1/3 flex flex-col space-y-6">
                 <span className='text-4xl text-gray-600 font-bold'>
                     CONTACTO
                 </span>
