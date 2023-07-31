@@ -47,7 +47,7 @@ const mailIcon = (
 
 const ContactUsContent: FC = () => {
     return (
-        <div className="bg-white flex flex-col space-y-4 md:flex-row xl:space-y-0 items-center justify-between p-10 lg:p-20">
+        <div className="bg-white flex flex-col space-y-4 md:flex-row xl:space-y-0 items-center justify-between p-10 lg:p-24">
             <div className="w-full md:w-2/5 max-w-md flex flex-col">
                 <span className="text-3xl font-semibold mb-4">
                     TÍTULO
