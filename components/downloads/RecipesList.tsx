@@ -33,7 +33,11 @@ const RecipesList: FC = () => {
                                 {recipe.description}
                             </span>
                             <button className='bg-green-600 text-white rounded-full py-1.5 px-6 cursor-pointer'>
-                                Ver receta
+                                <a
+                                    href="/files/sample.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                > Ver receta</a>
                             </button>
                         </div>
                     ))

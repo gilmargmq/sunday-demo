@@ -94,7 +94,10 @@ const IndexContactUs: FC = () => {
                     </span>
                 </span>
                 <div className="flex space-x-2">
-                    <a target="_blank" href="https://www.facebook.com/Sundayvegan" className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer">
+                    <a target="_blank"
+                        href="https://www.facebook.com/Sundayvegan"
+                        className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer"
+                        rel="noopener noreferrer">
                         {facebookIcon}
                     </a>
                     <div className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer">
