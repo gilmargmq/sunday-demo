@@ -6,7 +6,6 @@ import { useState } from 'react';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
-    console.log(router.pathname)
     const pages = [
         {
             name: 'Inicio',
@@ -33,7 +32,9 @@ const Navbar = () => {
     return (
         <nav className="flex w-full items-center justify-between flex-wrap p-6 top-0 sticky bg-white z-50">
             <div className="flex items-center cursor-pointer">
-                <img src='./logo.png' className="max-h-10" alt="Logo" />
+                <Link href="/">
+                    <img src='./logo.png' className="max-h-10" alt="Logo" />
+                </Link>
             </div>
             <div className="block lg:hidden">
                 <button

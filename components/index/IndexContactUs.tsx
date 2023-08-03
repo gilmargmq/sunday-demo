@@ -74,7 +74,7 @@ const IndexContactUs: FC = () => {
                         {locationIcon}
                     </span>
                     <span className="group-hover:text-green-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Jr. Jorge Basadre N°111, Puno, Peru
                     </span>
                 </span>
                 <span className="group flex space-x-2 items-center">
@@ -82,7 +82,7 @@ const IndexContactUs: FC = () => {
                         {whatsappIcon}
                     </span>
                     <span className="group-hover:text-green-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        995 343 400
                     </span>
                 </span>
                 <span className="group flex space-x-2 items-center">
@@ -90,13 +90,13 @@ const IndexContactUs: FC = () => {
                         {mailIcon}
                     </span>
                     <span className="group-hover:text-green-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        sundayvegan@gmail.com
                     </span>
                 </span>
                 <div className="flex space-x-2">
-                    <div className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer">
+                    <a target="_blank" href="https://www.facebook.com/Sundayvegan" className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer">
                         {facebookIcon}
-                    </div>
+                    </a>
                     <div className="bg-green-600 rounded-full flex items-center justify-center text-white p-2 hover:text-green-600 hover:bg-gray-200 cursor-pointer">
                         {whatsappIcon}
                     </div>

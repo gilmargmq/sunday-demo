@@ -46,8 +46,8 @@ const IndexBanner: FC<Props> = ({ addToRefs }) => {
             </div>
 
             <div className='absolute inset-x-0 top-1/4 flex flex-col items-center text-center justify-center space-y-4'>
-                <span className='text-4xl text-white font-bold'>
-                    TÍTULO
+                <span className='text-4xl font-bold'>
+                    SunDay Tienda Vegan
                 </span>
                 <span>
                     Sub título

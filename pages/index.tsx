@@ -11,8 +11,6 @@ export default function Home() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          console.log('entry' + index + entry)
-          console.log(buttonRefs.current)
           entry.target.classList.add('animate-left-to-center')
         }
       });

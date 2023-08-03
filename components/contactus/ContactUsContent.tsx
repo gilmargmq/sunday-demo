@@ -47,31 +47,23 @@ const mailIcon = (
 
 const ContactUsContent: FC = () => {
     return (
-        <div className="bg-white flex flex-col space-y-4 md:flex-row xl:space-y-0 items-center justify-between p-10 lg:p-24">
+        <div className="bg-white w-full 2xl:w-2/3 2xl:mx-auto flex flex-col space-y-4 md:flex-row xl:space-y-0 items-center justify-between p-10 lg:p-24">
             <div className="w-full md:w-2/5 max-w-md flex flex-col">
                 <span className="text-3xl font-semibold mb-4">
-                    TÍTULO
+                    Dejanos tu consulta
                 </span>
                 <label className="text-lg font-medium">
-                    Label
+                    Nombre
                 </label>
-                <input className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
+                <input type="text" className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
                 <label className="text-lg font-medium">
-                    Label
+                    Correo
                 </label>
-                <input className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
+                <input type="email" className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
                 <label className="text-lg font-medium">
-                    Label
+                    Mensaje
                 </label>
-                <input className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
-                <label className="text-lg font-medium">
-                    Label
-                </label>
-                <input className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
-                <label className="text-lg font-medium">
-                    Label
-                </label>
-                <input className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
+                <textarea className="bg-gray-100 border border-gray-300 p-2 rounded mb-4" />
                 <button className='bg-green-600 text-white rounded-full py-1.5 px-6 w-fit'>
                     Enviar
                 </button>
@@ -83,7 +75,7 @@ const ContactUsContent: FC = () => {
                             {locationIcon}
                         </span>
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Jr. Jorge Basadre N°111, Puno, Peru
                         </span>
                     </span>
                     <span className="group flex space-x-2 items-center">
@@ -91,7 +83,7 @@ const ContactUsContent: FC = () => {
                             {whatsappIcon}
                         </span>
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            995 343 400
                         </span>
                     </span>
                     <span className="group flex space-x-2 items-center">
@@ -99,7 +91,7 @@ const ContactUsContent: FC = () => {
                             {mailIcon}
                         </span>
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            sundayvegan@gmail.com
                         </span>
                     </span>
                 </div>

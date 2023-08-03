@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 
 interface Props {
@@ -8,7 +9,9 @@ interface Props {
 const LeftToCenterButton: FC<Props> = ({ buttonRef, bgColor }) => {
     return (
         <button ref={buttonRef} className={`${bgColor} text-white rounded-full py-1.5 px-6 relative`} >
-            Ver más
+            <Link href="/productos">
+                Ver más
+            </Link>
         </button >
     );
 }
