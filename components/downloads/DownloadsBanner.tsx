@@ -6,7 +6,7 @@ const DownloadsBanner: FC = () => {
             <img
                 className="w-full h-full object-cover"
                 alt='bg'
-                src='./sample-bg.jpg'
+                src='./descargas-banner.jpeg'
             />
             <div className='absolute inset-0 flex flex-col items-center text-center justify-center space-y-4'>
                 <span className='text-4xl text-white font-bold'>

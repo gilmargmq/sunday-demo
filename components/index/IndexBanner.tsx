@@ -6,9 +6,8 @@ interface Props {
 }
 
 const sample_imgs = [
-    './sample-bg.jpg',
-    './sample-bg-1.jpg',
-    './sample-bg-2.jpg',
+    './index-banner-1.jpg',
+    './index-banner-2.jpeg'
 ]
 
 const IndexBanner: FC<Props> = ({ addToRefs }) => {
@@ -46,7 +45,7 @@ const IndexBanner: FC<Props> = ({ addToRefs }) => {
             </div>
 
             <div className='absolute inset-x-0 top-1/4 flex flex-col items-center text-center justify-center space-y-4'>
-                <span className='text-4xl font-bold'>
+                <span className='text-4xl font-bold text-green-600'>
                     SunDay Tienda Vegan
                 </span>
                 <span>
